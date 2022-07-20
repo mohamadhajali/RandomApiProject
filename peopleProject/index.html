@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>API Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+
+  <body>
+    <script id="first-templet" type="text/x-handlebars-template">
+      <img src={{img}} alt="" />
+      <h1 style="display: inline">
+        {{name}}
+      </h1>
+      <p>{{location}}</p>
+    </script>
+    <script id="secound-templet" type="text/x-handlebars-template">
+      <ul>
+        <li>
+          {{name}}
+        </li>
+      </ul>
+    </script>
+    <script id="thierd-templet" type="text/x-handlebars-template">
+      <h1>favorite quotes </h1>
+      <h2>
+        {{quoto}}
+      </h2>
+    </script>
+    <script id="forth-templet" type="text/x-handlebars-template">
+      <h1>About Me </h1>
+      <h2>
+        {{bocon}}
+      </h2>
+    </script>
+
+    <script id="fifth-templet" type="text/x-handlebars-template">
+      <h1>favorite pokemon </h1>
+      <h2>
+        {{pokemon}}
+      </h2>
+    </script>
+    <div class="container">
+      <div class="user-container"></div>
+      <div class="quote-container"></div>
+      <div class="content-container">
+        <div class="pokemon-container"></div>
+        <div class="meat-container"></div>
+      </div>
+      <div class="friends">
+        <h4>Friends</h4>
+        <div class="friends-container"></div>
+      </div>
+      <div class="buttons">
+        <button id="load">Load User Data</button>
+        <button id="display">Display User</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="APIManager.js"></script>
+<script src="Renderer.js"></script>
+<script src="main.js"></script>
